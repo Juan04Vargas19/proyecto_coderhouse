@@ -187,9 +187,14 @@ body{
     background-image: url(./assets/categorias-cabello.jpg);
 }
 
+.main-contacto{
+    height: 60vh;
+}
+
 .hero6__form{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
+    margin-top: 90px
 }
 
 #hero6__form-label-nombre{
