@@ -33,7 +33,7 @@ body{
 
 .navbar__list{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
@@ -48,6 +48,10 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     font-size: 22px;
+}
+
+.navbar__list-burger{
+    display: none;
 }
 
 /* Estilos páginas */
@@ -83,13 +87,14 @@ body{
 }
 
 .hero__categorias{
-    margin: 20px 15px;
+    margin: 20px 40px;
 }
 
 .hero__categorias-tipos{
-    display: flex;
-    justify-content: space-between;
-    margin: 0px 340px
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin: 0px 40px
 }
 
 .hero__categorias-tipos-img{
@@ -274,7 +279,6 @@ body{
 
 .footer{
     background-color: #EDE9E3;
-    /* border-top: 1px solid black; */
     margin-top: 50px;
     list-style: none;
     display: flex;
@@ -306,15 +310,113 @@ body{
 
 /* Media queries */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px){
+    #titulo-pagina-logo{
+        height: 140px;
+    }
+    
+    .navbar__list-element{
+        margin-right: 20px;
+        font-size: 15px
+    }
 
+    .hero__categorias-tipos{
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 992px){
+    #titulo-pagina-logo{
+        height: 130px;
+    }
+
+    .navbar__list-element{
+        display: none;
+    }
+
+    .navbar__list-burger{
+        display: block;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    #titulo-pagina-logo{
+        height: 120px;
+    }
+
+    .navbar__list-element{
+        display: none;
+    }
+
+    .navbar__list-burger{
+        display: block;
+        margin-left: 60px;
+    }
+
+    .hero__categorias-tipos{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 10px;
+    }
+
+    .hero2__productos, .hero5__productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero3__categ1, .hero3__categ2, .hero3__categ3, .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4{
+        margin: 10px 10px;
+    }
+
+    .hero3__categ-text, .hero4__categ-text{
+        font-weight: lighter;
+    }
 }
 
 @media (max-width: 576px) {
-    .header{
-
-    }
+    
     #titulo-pagina-logo{
-        
+        height: 100px;
+    }
+
+    .navbar__list-element{
+        display: none;
+    }
+
+    .navbar__list-burger{
+        display: block;
+        margin-left: 60px;
+    }
+
+    .hero__categorias-tipos{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 40px;
+    }
+
+    .hero2__productos, .hero5__productos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero3__categ1, .hero3__categ2, .hero3__categ3, .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4{
+        margin: 10px 10px;
+    }
+
+    .hero3__categ-text, .hero4__categ-text{
+        font-weight: lighter;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer__list-contac-title{
+        margin-top: 15px;
+    }
+
+    .footer__logo{
+        margin: 15px 0px;
     }
 }
