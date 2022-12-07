@@ -12,17 +12,22 @@
 </head>
 <body>
     <header class="header">
-        <div class="contenedor-navbar">
+        <div>
+            <input type="checkbox" id="toggle">
             <nav class="navbar">
+                <a href="./index.html"><img id="titulo-pagina-logo" src="./assets/logo.png" alt=""></a>
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
                 <ul class="navbar__list">
                     <li class="navbar__list-element"><a class="nav__bar-link" href="./index.html">Inicio</a></li>
                     <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/nueva_coleccion.html">Nueva colección</a></li>
                     <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/tendencias.html">Tendencias</a></li>
-                    <li><a href="./index.html"><img id="titulo-pagina-logo" src="./assets/logo.png" alt=""></a></li>
                     <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/productos.html">Categorías</a></li>
                     <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/sale.html">Sale</a></li>
                     <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/contacto.html">Contacto</a></li>
-                    <li><i class="fa-solid fa-bars navbar__list-burger"></i></li>
                 </ul>
             </nav>
         </div>
