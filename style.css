@@ -370,7 +370,7 @@ input:checked ~ nav .navbar__list{
     }
 
     .hero__img{
-        background-image: url(./assets/main_responsive.jpg);
+        background-image: url(./assets/main-resposive.jpg);
     }
 
     .hero__categorias-tipos{
