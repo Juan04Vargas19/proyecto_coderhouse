@@ -9,6 +9,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Sacramento&display=swap');
 
+@font-face {
+    font-family: 'Panther';
+    src: url(./assets/fuente/pantherdam_signature/Pantherdam\ Signature.ttf);
+    font-style: normal;
+}
+
 body{
     background-color: #DACABB;
     font-family: 'Comfortaa', cursive;
@@ -32,10 +38,11 @@ body{
 }
 
 .navbar__list{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     align-items: center;
     list-style: none;
+    margin: 0px 300px;
 }
 
 .nav__bar-link{
@@ -58,12 +65,23 @@ body{
 
 .hero__img{
     display: flex;
-    justify-content: center;
-    background-image: url(././assets/main.jpg);
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./assets/main.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 400px 0px 40px 0px;
+    padding: 250px 0px 120px 0px;
+}
+
+.hero__img h1{
+    font-family: 'Panther';
+    color: #EDE9E3;
+    font-size: 250px;
+    margin-bottom: 275px;
+    font-weight: lighter;
+    text-align: center;
+    -webkit-text-stroke: 1px #000;
 }
 
 .hero_img-button-contenedor{
@@ -340,6 +358,10 @@ body{
         display: block;
         margin-left: 60px;
     }
+
+    .hero2__productos, .hero5__productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -391,7 +413,11 @@ body{
 
     .hero__categorias-tipos{
         grid-template-columns: repeat(1, 1fr);
-        margin: 0px 40px;
+        margin: 0px 20px;
+    }
+
+    .hero__categorias{
+        margin: 20px 20px;
     }
 
     .hero2__productos, .hero5__productos{
