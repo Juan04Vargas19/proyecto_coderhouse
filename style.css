@@ -170,6 +170,7 @@ input:checked ~ nav .navbar__list{
     padding-top: 30px; 
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .hero2__productos, .hero5__productos{
