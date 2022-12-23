@@ -1,0 +1,121 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #D4B2A7;
+    position: sticky;
+    top: 0px;
+
+    &__navbar{
+        display: flex;
+        justify-content: space-between;
+
+        &-titulo-pagina-logo{
+            height: 160px;
+        }
+
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+            align-items: center;
+            list-style: none;
+            margin-left: 100px;
+
+            &-element{
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 22px;
+
+                &-link{
+                    text-decoration: none;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                a{
+                    transition: color 0.3s;
+        
+                    &:hover{
+                        color: #000;
+                    }
+                }
+            }
+        }
+
+        &-toggler{
+            display: none;
+            height: min-content;
+            margin: 40px 0 0 20px;
+            cursor: pointer;
+    
+            &-bar{
+                width: 40px;
+                height: 5px;
+                margin-bottom: 10px;
+                background-color: #000;
+                transition: .4s;
+            }
+        }
+    }
+
+    input:checked ~ nav .header__navbar-list{
+        transform: translateY(-16px);
+    }
+
+    @media(max-width: 1200px){
+        .header__navbar-titulo-pagina-logo{
+            height: 140px;
+        }
+        .navbar__list-element{
+            margin-right: 20px;
+            font-size: 15px
+        }
+    }
+
+    @media (max-width: 992px){
+        .header__navbar-titulo-pagina-logo{
+            height: 130px;
+        }
+    
+        .navbar__list-burger{
+            display: block;
+            margin-left: 60px;
+        }
+    
+        .navbar__list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    
+        nav .navbar__list{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            position: absolute;
+            top: 150px;
+            left: -100px;
+            background-color: #D4B2A7;
+            width: 100%;
+            transform: translateY(-230%);
+            z-index: -1;
+            transition: 0.6s;
+        }
+    
+        nav .navbar__list-element{
+            padding: 10px 0;
+        }
+    
+        nav .navbar-toggler{
+            display: grid !important;
+    
+        }
+    }
+}
+
+/* diseño menu hamburguesa funcional */
+
+
+#toggle{
+    display: none;
+}
+

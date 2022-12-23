@@ -1,0 +1,22 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "proyecto realizado para curso de desarrollo web, coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan04Vargas19/proyecto_coderhouse.git"
+  },
+  "author": "Juan Vargas Mejía",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juan04Vargas19/proyecto_coderhouse/issues"
+  },
+  "homepage": "https://github.com/Juan04Vargas19/proyecto_coderhouse#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
