@@ -1,0 +1,101 @@
+.hero__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../assets/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 250px 0px 120px 0px;
+
+    h1{
+        font-family: 'Panther';
+        color: #EDE9E3;
+        font-size: 250px;
+        margin-bottom: 275px;
+        font-weight: lighter;
+        text-align: center;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    &-button{
+        width: 200px; 
+        height: 60px;
+        background-color: #D4B2A7;
+        border: 0px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+
+        &:hover{
+            background-color: rgba(231, 215, 201, 0.5)
+        }
+
+        &-link{
+            text-decoration: none;
+            color: #fff;
+            font-size: 22px;
+            font-family: 'Comfortaa', cursive;
+        }
+    }
+}
+
+.hero__categorias{
+    margin: 20px 40px;
+
+    &-title{
+        margin: 40px;
+        font-size: 40px;
+        padding-top: 30px; 
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &-tipos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        margin: 0px 40px;
+
+        &-img{
+            width: 290px;
+            height: 420px;
+            padding: 10px;
+        }
+
+        &-desc{
+            text-align: center;
+            margin: 10px;
+            font-weight: lighter;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .hero__img{
+        background-image: url(../../assets/main-resposive.jpg);
+    }
+
+    .hero__categorias-tipos{
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 10px;
+    }
+}
+
+@media (max-width: 768px){
+    .hero__img h1{
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 576px){
+    .hero__categorias{
+        margin: 20px 20px;
+
+        &-tipos{
+            grid-template-columns: repeat(1, 1fr);
+            margin: 0px 20px;
+        }
+    }
+}

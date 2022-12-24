@@ -1,169 +1,14 @@
 /* Estilos generales */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Sacramento&display=swap');
 
-@font-face {
-    font-family: 'Panther';
-    src: url(./assets/fuente/pantherdam_signature/Pantherdam\ Signature.ttf);
-    font-style: normal;
-}
 
-body{
-    background-color: #DACABB;
-    font-family: 'Comfortaa', cursive;
-}
-
-/* .header{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: #D4B2A7;
-    position: sticky;
-    top: 0px;
-}
-
-#titulo-pagina-logo{
-    height: 160px;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar__list{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    list-style: none;
-    margin-left: 100px;
-}
-
-.navbar__list a{
-    transition: color 0.3s;
-}
-
-.navbar__list a:hover{
-    color: #000;
-}
-
-.nav__bar-link{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.navbar__list-element{
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 22px;
-} */
-
-/* diseño menu hamburguesa funcional */
-
-/* nav .navbar-toggler{
-    display: none;
-    height: min-content;
-    margin: 40px 0 0 20px;
-    cursor: pointer;
-}
-
-nav .navbar-toggler .bar{
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #000;
-    transition: .4s;
-}
-
-#toggle{
-    display: none;
-}
-
-input:checked ~ nav .navbar__list{
-    transform: translateY(-16px);
-} */
 
 /* Estilos páginas */
 
-.hero__img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(./assets/main.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 250px 0px 120px 0px;
-}
 
-.hero__img h1{
-    font-family: 'Panther';
-    color: #EDE9E3;
-    font-size: 250px;
-    margin-bottom: 275px;
-    font-weight: lighter;
-    text-align: center;
-    -webkit-text-stroke: 1px #000;
-}
 
-.hero_img-button-contenedor{
-    display: flex;
-    justify-content: flex-end;
-}
-
-#hero__button-contenedor-element{
-    width: 200px; 
-    height: 60px;
-    background-color: #D4B2A7;
-    border: 0px;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-#hero__button-contenedor-element:hover{
-    background-color: rgba(231, 215, 201, 0.5)
-}
-
-.hero__button-link{
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-    font-family: 'Comfortaa', cursive;
-}
-
-.hero__categorias{
-    margin: 20px 40px;
-}
-
-.hero__categorias-tipos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    margin: 0px 40px
-}
-
-.hero__categorias-tipos-img{
-    width: 290px;
-    height: 420px;
-    padding: 10px;
-}
-
-.hero__categorias-tipos-desc{
-    text-align: center;
-    margin: 10px;
-    font-weight: lighter;
-}
-
-.hero2__title, .hero__categorias-title, .hero3__title, .hero4__title, .hero5__title, #hero6__title{
+.hero2__title, .hero3__title, .hero4__title, .hero5__title, #hero6__title{
     margin: 40px;
     font-size: 40px;
     padding-top: 30px; 
@@ -326,48 +171,11 @@ input:checked ~ nav .navbar__list{
 
 /* Estilos footer */
 
-.footer{
-    background-color: #EDE9E3;
-    margin-top: 50px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.footer__list-contac{
-    list-style: none;
-}
-
-#footer__logo-element{
-    width: 165px;
-    height: 57px;
-}
-
-#footer__list-contac-title, #footer__list-redes-title{
-    font-weight: bold;
-    padding: 10px 60px;
-}
-
-.footer__list-contac-element, .footer__list-redes-element, .footer__logo{
-    padding: 10px 60px;
-}
-
-.footer__list-redes{
-    list-style: none;
-}
 
 /* Media queries */
 
 @media (max-width: 1200px){
-    #titulo-pagina-logo{
-        height: 140px;
-    }
-    
-    .navbar__list-element{
-        margin-right: 20px;
-        font-size: 15px
-    }
 
     .hero__img{
         background-image: url(./assets/main-resposive.jpg);
@@ -381,41 +189,6 @@ input:checked ~ nav .navbar__list{
 }
 
 @media (max-width: 992px){
-    #titulo-pagina-logo{
-        height: 130px;
-    }
-
-    .navbar__list-burger{
-        display: block;
-        margin-left: 60px;
-    }
-
-    .navbar__list{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    nav .navbar__list{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        position: absolute;
-        top: 150px;
-        left: -100px;
-        background-color: #D4B2A7;
-        width: 100%;
-        transform: translateY(-230%);
-        z-index: -1;
-        transition: 0.6s;
-    }
-
-    nav .navbar__list-element{
-        padding: 10px 0;
-    }
-
-    nav .navbar-toggler{
-        display: grid !important;
-
-    }
 
     .hero2__productos, .hero5__productos{
         grid-template-columns: repeat(2, 1fr);
@@ -423,13 +196,6 @@ input:checked ~ nav .navbar__list{
 }
 
 @media (max-width: 768px) {
-    #titulo-pagina-logo{
-        height: 120px;
-    }
-
-    input:checked ~ nav .navbar__list{
-        transform: translateY(-26px);
-    }
 
     .hero__img h1{
         font-size: 150px;
@@ -448,30 +214,10 @@ input:checked ~ nav .navbar__list{
         font-weight: lighter;
     }
 
-    .footer{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    #footer__list-contac-title{
-        margin-top: 15px;
-    }
-
-    .footer__logo{
-        margin: 15px 0px;
-    }
+    
 }
 
 @media (max-width: 576px) {
-    
-    #titulo-pagina-logo{
-        height: 100px;
-    }
-
-    input:checked ~ nav .navbar__list{
-        transform: translateY(-46px);
-    }
 
     .hero__categorias-tipos{
         grid-template-columns: repeat(1, 1fr);
