@@ -272,6 +272,14 @@ body {
   .hero3__categ-text {
     font-weight: lighter; } }
 
+.carousel {
+  height: 250px;
+  width: 1000px;
+  margin: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .hero4__categ1 {
   background-image: url(../../assets/categorias-pulseras.jpg); }
 
