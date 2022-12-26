@@ -14,6 +14,51 @@ body {
   background-color: #DACABB;
   font-family: 'Comfortaa', cursive; }
 
+.categorias-title, .hero__categorias-title, .hero2__title, .hero3__title, .hero4__title, .hero5__title {
+  margin: 40px;
+  font-size: 40px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold; }
+
+.productos-art, .hero2__productos-art, .hero5__productos-art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px; }
+
+.productos-img, .hero2__productos-img, .hero5__productos-img {
+  height: 250px;
+  width: 250px;
+  margin: 30px; }
+
+.productos-name, .hero2__productos-name, .hero5__productos-name {
+  font-weight: bold; }
+
+.categorias-bck, .hero3__categ1, .hero3__categ2, .hero3__categ3, .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  border: 30px;
+  margin: 60px 150px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: white; }
+
+.categorias-txt, .hero3__categ-text, .hero4__categ-text {
+  background-image: url(../../assets/fondo-texto.png);
+  background-position: center;
+  background-size: cover;
+  width: 240px;
+  padding: 40px;
+  align-content: center;
+  text-align: center; }
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -163,13 +208,6 @@ body {
 
 .hero__categorias {
   margin: 20px 40px; }
-  .hero__categorias-title {
-    margin: 40px;
-    font-size: 40px;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center; }
   .hero__categorias-tipos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -189,6 +227,7 @@ body {
     background-image: url(../../assets/main-resposive.jpg); }
   .hero__categorias-tipos {
     justify-items: center;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0px 10px; } }
 
@@ -200,5 +239,67 @@ body {
   .hero__categorias {
     margin: 20px 20px; }
     .hero__categorias-tipos {
+      display: grid;
       grid-template-columns: repeat(1, 1fr);
       margin: 0px 20px; } }
+
+.hero2__productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 992px) {
+  .hero2__productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 576px) {
+  .hero2__productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
+
+.hero3__categ1 {
+  background-image: url(../../assets/tendencias-fin2022.jpg); }
+
+.hero3__categ2 {
+  background-image: url(../../assets/tendencias-verano2022.jpg); }
+
+.hero3__categ3 {
+  background-image: url(../../assets/tendencias2023.jpg); }
+
+@media (max-width: 768px) {
+  .hero3__categ1, .hero3__categ2, .hero3__categ3 {
+    margin: 10px 10px; }
+  .hero3__categ-text {
+    font-weight: lighter; } }
+
+.hero4__categ1 {
+  background-image: url(../../assets/categorias-pulseras.jpg); }
+
+.hero4__categ2 {
+  background-image: url(../../assets/categorias-anillos.jpg); }
+
+.hero4__categ3 {
+  background-image: url(../../assets/categorias-aretes.jpg); }
+
+.hero4__categ4 {
+  background-image: url(../../assets/categorias-cabello.jpg); }
+
+@media (max-width: 768px) {
+  .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4 {
+    margin: 10px 10px; }
+  .hero4__categ-text {
+    font-weight: lighter; } }
+
+.hero5__productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 992px) {
+  .hero5__productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 576px) {
+  .hero5__productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }

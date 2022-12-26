@@ -1,0 +1,36 @@
+.hero4__title{
+    @extend .categorias-title;
+}
+
+.hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4{
+    @extend .categorias-bck;
+}
+
+.hero4__categ-text{
+    @extend .categorias-txt;
+}
+
+.hero4__categ1{
+    background-image: url(../../assets/categorias-pulseras.jpg);
+}
+
+.hero4__categ2{
+    background-image: url(../../assets/categorias-anillos.jpg);
+}
+
+.hero4__categ3{
+    background-image: url(../../assets/categorias-aretes.jpg);
+}
+.hero4__categ4{
+    background-image: url(../../assets/categorias-cabello.jpg);
+}
+
+@media (max-width: 768px){
+    .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4{
+        margin: 10px 10px;
+    }
+
+    .hero4__categ-text{
+        font-weight: lighter;
+    }
+}

@@ -1,0 +1,31 @@
+.hero5__title{
+    @extend .categorias-title;
+}
+
+.hero5__productos{
+    @include templateGrid(3);
+
+    &-art{
+        @extend .productos-art;
+    }
+
+    &-img{
+        @extend .productos-img;
+    }
+
+    &-name{
+        @extend .productos-name;
+    }
+}
+
+@media (max-width: 992px){
+    .hero5__productos{
+        @include templateGrid(2);
+    }
+}
+
+@media (max-width: 576px){
+    .hero5__productos{
+        @include templateGrid(1);
+    }
+}

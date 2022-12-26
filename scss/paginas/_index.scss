@@ -43,17 +43,11 @@
     margin: 20px 40px;
 
     &-title{
-        margin: 40px;
-        font-size: 40px;
-        padding-top: 30px; 
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        @extend .categorias-title;
     }
 
     &-tipos{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        @include templateGrid(4);
         justify-items: center;
         margin: 0px 40px;
 
@@ -78,7 +72,7 @@
 
     .hero__categorias-tipos{
         justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        @include templateGrid(2);
         margin: 0px 10px;
     }
 }
@@ -94,7 +88,7 @@
         margin: 20px 20px;
 
         &-tipos{
-            grid-template-columns: repeat(1, 1fr);
+            @include templateGrid(1);
             margin: 0px 20px;
         }
     }
