@@ -4,35 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios Sicarú</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="header">
-        <div>
-            <input type="checkbox" id="toggle">
-            <nav class="navbar">
-                <a href="../index.html"><img id="titulo-pagina-logo" src="../assets/logo.png" alt=""></a>
-                <label class="navbar-toggler" for="toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-                <ul class="navbar__list">
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="../index.html">Inicio</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./nueva_coleccion.html">Nueva colección</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./tendencias.html">Tendencias</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./productos.html">Categorías</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./sale.html">Sale</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <input type="checkbox" id="toggle">
+        <nav class="header__navbar">
+            <a href="../index.html"><img class="header__navbar-titulo-pagina-logo" src="../assets/logo.png" alt="logo"></a>
+            <label class="header__navbar-toggler" for="toggle">
+                <span class="header__navbar-toggler-bar"></span>
+                <span class="header__navbar-toggler-bar"></span>
+                <span class="header__navbar-toggler-bar"></span>
+            </label>
+            <ul class="header__navbar-list">
+                <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="../index.html">Inicio</a></li>
+                <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="../paginas/nueva_coleccion.html">Nueva colección</a></li>
+                <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="../paginas/tendencias.html">Tendencias</a></li>
+                <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="../paginas/productos.html">Categorías</a></li>
+                <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="../paginas/sale.html">Sale</a></li>
+            </ul>
+        </nav>
     </header>
     <main class="hero">
+        <!-- <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/categoria-pulsera.jpg" class="d-block w-100" alt="pulseraimg">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/categoria-anillos.jpg" class="d-block w-100" alt="anillosimg">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> -->
         <h1 class="hero4__title">Nuestros productos:</h1>
         <section class="hero4__categ1">
             <h2 class="hero4__categ-text">Pulseras</h2>
@@ -50,18 +66,18 @@
     <footer class="footer">
         <div>
             <ul class="footer__list-contac">
-                <li id="footer__list-contac-title">Contáctanos</li>
+                <li class="footer__list-contac-title">Contáctanos</li>
                 <li class="footer__list-contac-element">Bogotá, Colombia</li>
                 <li class="footer__list-contac-element">alejamejia@gmail.com</li>
                 <li class="footer__list-contac-element">+57 (310) 256-5715</li>
             </ul>
         </div>
         <div class="footer__logo">
-            <img id="footer__logo-element" src="../assets/footer-pago.png" alt="logo">
+            <img class="footer__logo-element" src="../assets/footer-pago.png" alt="logo">
         </div>
         <div>
             <ul class="footer__list-redes">
-                <li id="footer__list-redes-title">Nuestras redes</li>
+                <li class="footer__list-redes-title">Nuestras redes</li>
                 <li class="footer__list-redes-element">Instagram</li>
                 <li class="footer__list-redes-element">WhatsApp</li>
                 <li class="footer__list-redes-element">Facebook</li>

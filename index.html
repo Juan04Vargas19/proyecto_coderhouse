@@ -4,38 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accesorios Sicarú</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <div>
             <input type="checkbox" id="toggle">
-            <nav class="navbar">
-                <a href="./index.html"><img id="titulo-pagina-logo" src="./assets/logo.png" alt=""></a>
-                <label class="navbar-toggler" for="toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+            <nav class="header__navbar">
+                <a href="./index.html"><img class="header__navbar-titulo-pagina-logo" src="./assets/logo.png" alt=""></a>
+                <label class="header__navbar-toggler" for="toggle">
+                    <span class="header__navbar-toggler-bar"></span>
+                    <span class="header__navbar-toggler-bar"></span>
+                    <span class="header__navbar-toggler-bar"></span>
                 </label>
-                <ul class="navbar__list">
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./index.html">Inicio</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/nueva_coleccion.html">Nueva colección</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/tendencias.html">Tendencias</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/productos.html">Categorías</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/sale.html">Sale</a></li>
-                    <li class="navbar__list-element"><a class="nav__bar-link" href="./paginas/contacto.html">Contacto</a></li>
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="./index.html">Inicio</a></li>
+                    <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="./paginas/nueva_coleccion.html">Nueva colección</a></li>
+                    <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="./paginas/tendencias.html">Tendencias</a></li>
+                    <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="./paginas/productos.html">Categorías</a></li>
+                    <li class="header__navbar-list-element"><a class="header__navbar-list-element-link" href="./paginas/sale.html">Sale</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <main class="hero">
         <section class="hero__img">
             <h1>Colección Sicarú</h1>
-            <button id="hero__button-contenedor-element"><a class="hero__button-link" href="./paginas/nueva_coleccion.html">Compra ahora</a></button>
+            <button class="hero__img-button"><a class="hero__img-button-link" href="./paginas/nueva_coleccion.html">Compra ahora</a></button>
         </section>
         <div class="hero__categorias">
             <h3 class="hero__categorias-title">Categorías</h3>
@@ -62,18 +55,18 @@
     <footer class="footer">
         <div>
             <ul class="footer__list-contac">
-                <li id="footer__list-contac-title">Contáctanos</li>
+                <li class="footer__list-contac-title">Contáctanos</li>
                 <li class="footer__list-contac-element">Bogotá, Colombia</li>
                 <li class="footer__list-contac-element">alejamejia@gmail.com</li>
                 <li class="footer__list-contac-element">+57 (310) 256-5715</li>
             </ul>
         </div>
         <div class="footer__logo">
-            <img id="footer__logo-element" src="./assets/footer-pago.png" alt="logo">
+            <img class="footer__logo-element" src="./assets/footer-pago.png" alt="logo">
         </div>
         <div>
             <ul class="footer__list-redes">
-                <li id="footer__list-redes-title">Nuestras redes</li>
+                <li class="footer__list-redes-title">Nuestras redes</li>
                 <li class="footer__list-redes-element">Instagram</li>
                 <li class="footer__list-redes-element">WhatsApp</li>
                 <li class="footer__list-redes-element">Facebook</li>
