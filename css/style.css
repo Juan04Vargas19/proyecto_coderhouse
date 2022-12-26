@@ -37,7 +37,7 @@ body {
 .productos-name, .hero2__productos-name, .hero5__productos-name {
   font-weight: bold; }
 
-.categorias-bck, .hero3__categ1, .hero3__categ2, .hero3__categ3, .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4 {
+.categorias-bck, .hero3__categ1, .hero3__categ2, .hero3__categ3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -50,7 +50,7 @@ body {
   height: 400px;
   color: white; }
 
-.categorias-txt, .hero3__categ-text, .hero4__categ-text {
+.categorias-txt, .hero3__categ-text {
   background-image: url(../../assets/fondo-texto.png);
   background-position: center;
   background-size: cover;
@@ -272,31 +272,34 @@ body {
   .hero3__categ-text {
     font-weight: lighter; } }
 
-.carousel {
-  height: 250px;
-  width: 1000px;
-  margin: 97px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.hero4 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center; }
+  .hero4 .carousel {
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-.hero4__categ1 {
-  background-image: url(../../assets/categorias-pulseras.jpg); }
+@media (max-width: 1200px) {
+  .carousel {
+    width: 800px; } }
 
-.hero4__categ2 {
-  background-image: url(../../assets/categorias-anillos.jpg); }
-
-.hero4__categ3 {
-  background-image: url(../../assets/categorias-aretes.jpg); }
-
-.hero4__categ4 {
-  background-image: url(../../assets/categorias-cabello.jpg); }
+@media (max-width: 992px) {
+  .carousel {
+    width: 600px; } }
 
 @media (max-width: 768px) {
-  .hero4__categ1, .hero4__categ2, .hero4__categ3, .hero4__categ4 {
-    margin: 10px 10px; }
-  .hero4__categ-text {
-    font-weight: lighter; } }
+  .carousel {
+    height: 400px;
+    width: 450px; } }
+
+@media (max-width: 576px) {
+  .carousel {
+    height: 300px;
+    width: 350px; } }
 
 .hero5__productos {
   display: grid;
