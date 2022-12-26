@@ -65,7 +65,8 @@ body {
   flex-direction: row;
   background-color: #D4B2A7;
   position: sticky;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
   .header__navbar {
     display: flex;
     justify-content: space-between; }
@@ -147,32 +148,42 @@ body {
 .footer {
   background-color: #EDE9E3;
   margin-top: 50px;
-  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .footer__list-contac, .footer__list-redes {
     list-style: none; }
     .footer__list-contac-title, .footer__list-redes-title {
       font-weight: bold;
       padding: 10px 60px; }
     .footer__list-contac-element, .footer__list-redes-element {
+      width: 260px;
       padding: 10px 60px; }
+    .footer__list-contac a, .footer__list-redes a {
+      text-decoration: none;
+      color: black; }
   .footer__logo {
     padding: 10px 60px; }
     .footer__logo-element {
       width: 165px;
       height: 57px; }
+  .footer__logo {
+    display: flex;
+    align-items: center; }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
     .footer__logo {
-      margin: 15px 0px; }
-    .footer__list-contac-title {
+      display: none; }
+    .footer__list-contac-title, .footer__list-redes {
       margin-top: 15px; } }
+
+@media (max-width: 576px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center; } }
 
 .hero__img {
   display: flex;
@@ -282,24 +293,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-
-@media (max-width: 1200px) {
-  .carousel {
-    width: 800px; } }
-
-@media (max-width: 992px) {
-  .carousel {
-    width: 600px; } }
-
-@media (max-width: 768px) {
-  .carousel {
-    height: 400px;
-    width: 450px; } }
-
-@media (max-width: 576px) {
-  .carousel {
-    height: 300px;
-    width: 350px; } }
+  @media (max-width: 1200px) {
+    .hero4 .carousel {
+      width: 800px; } }
+  @media (max-width: 992px) {
+    .hero4 .carousel {
+      width: 600px; } }
+  @media (max-width: 768px) {
+    .hero4 .carousel {
+      height: 400px;
+      width: 450px; } }
+  @media (max-width: 576px) {
+    .hero4 .carousel {
+      height: 300px;
+      width: 350px; } }
 
 .hero5__productos {
   display: grid;
