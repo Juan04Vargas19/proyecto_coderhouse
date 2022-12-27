@@ -83,7 +83,7 @@ body {
 
 @media (max-width: 576px) {
   .navbar-brand-image {
-    height: 90px !important; } }
+    height: 80px !important; } }
 
 .footer {
   background-color: #EDE9E3;
