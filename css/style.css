@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Panther';
-  src: url(../../assets/fuente/pantherdam_signature/Pantherdamsignature.ttf);
+  src: url(../assets/fuente/pantherdam_signature/Pantherdamsignature.ttf);
   font-style: normal; }
 
 body {
@@ -131,7 +131,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../../assets/main.jpg);
+  background-image: url(../assets/main.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -177,7 +177,7 @@ body {
 
 @media (max-width: 1200px) {
   .hero__img {
-    background-image: url(../../assets/main-resposive.jpg); }
+    background-image: url(../assets/main-resposive.jpg); }
   .hero__categorias-tipos {
     justify-items: center;
     display: grid;
@@ -211,13 +211,13 @@ body {
     grid-template-columns: repeat(1, 1fr); } }
 
 .hero3__categ1 {
-  background-image: url(../../assets/tendencias-fin2022.jpg); }
+  background-image: url(../assets/tendencias-fin2022.jpg); }
 
 .hero3__categ2 {
-  background-image: url(../../assets/tendencias-verano2022.jpg); }
+  background-image: url(../assets/tendencias-verano2022.jpg); }
 
 .hero3__categ3 {
-  background-image: url(../../assets/tendencias2023.jpg); }
+  background-image: url(../assets/tendencias2023.jpg); }
 
 @media (max-width: 768px) {
   .hero3__categ1, .hero3__categ2, .hero3__categ3 {
