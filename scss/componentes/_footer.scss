@@ -1,8 +1,12 @@
 .footer{
-    background-color: #EDE9E3;
+    background-color: $ftColor;
     margin-top: 50px;
     display: flex;
     justify-content: center;
+
+    div{
+        margin-top: 20px;
+    }
 
     &__list-contac, &__list-redes{
         list-style: none;
@@ -38,7 +42,7 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: $large){
     .footer{
         @include templateGrid(2);
 
@@ -52,7 +56,7 @@
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $small){
     .footer{
         @include templateGrid(1);
         justify-items: center;

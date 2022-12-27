@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    background-color: #D4B2A7;
+    background-color: $hdColor;
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -23,13 +23,13 @@
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: $extLarge){
     .navbar-brand-image{
         height: 120px !important;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $small){
     .navbar-brand-image{
         height: 100px !important;
     }

@@ -65,7 +65,7 @@
     }
 }
 
-@media (max-width: 1200px){
+@media (max-width: $extLarge){
     .hero__img{
         background-image: url(../../assets/main-resposive.jpg);
     }
@@ -77,13 +77,13 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: $medium){
     .hero__img h1{
         font-size: 150px;
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $small){
     .hero__categorias{
         margin: 20px 20px;
 

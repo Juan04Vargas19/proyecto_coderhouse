@@ -18,13 +18,13 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: $large){
     .hero5__productos{
         @include templateGrid(2);
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: $small){
     .hero5__productos{
         @include templateGrid(1);
     }

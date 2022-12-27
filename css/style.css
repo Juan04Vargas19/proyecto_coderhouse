@@ -90,6 +90,8 @@ body {
   margin-top: 50px;
   display: flex;
   justify-content: center; }
+  .footer div {
+    margin-top: 20px; }
   .footer__list-contac, .footer__list-redes {
     list-style: none; }
     .footer__list-contac-title, .footer__list-redes-title {

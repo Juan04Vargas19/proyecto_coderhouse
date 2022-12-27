@@ -14,26 +14,26 @@
         align-items: center;
     }
 
-    @media (max-width: 1200px){
+    @media (max-width: $extLarge){
         .carousel{
             width: 800px;
         }
     }
     
-    @media (max-width: 992px){
+    @media (max-width: $large){
         .carousel{
             width: 600px;
         }
     }
     
-    @media (max-width: 768px){
+    @media (max-width: $medium){
         .carousel{
             height: 400px;
             width: 450px;
         }
     }
     
-    @media (max-width: 576px){
+    @media (max-width: $small){
         .carousel{
             height: 300px;
             width: 350px;

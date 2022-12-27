@@ -22,7 +22,7 @@
     @extend .categorias-txt;
 }
 
-@media (max-width: 768px){
+@media (max-width: $medium){
     .hero3__categ1, .hero3__categ2, .hero3__categ3{
         margin: 10px 10px;
     }
